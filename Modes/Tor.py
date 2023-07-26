@@ -69,75 +69,66 @@ print(colored('[+] Searching in "OnionLand" http://3bbad7fauom4d6sgppalyqddsqbf5
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=1")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=1")
 soup = BeautifulSoup(page.text, 'html.parser')
-link_elements = soup.find_all(class_='link')
-for link_element in link_elements:
-    text = link_element.get_text()
-    if text.startswith('http://'):
-        print(text)
+i_elements = soup.find_all('link')
+for i_element in i_elements:
+    if i_element.text.startswith('http://'):
+        print(i_element.text)
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=2")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=2")
 soup = BeautifulSoup(page.text, 'html.parser')
-link_elements = soup.find_all(class_='link')
-for link_element in link_elements:
-    text = link_element.get_text()
-    if text.startswith('http://'):
-        print(text)
+i_elements = soup.find_all('link')
+for i_element in i_elements:
+    if i_element.text.startswith('http://'):
+        print(i_element.text)
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=3")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=3")
 soup = BeautifulSoup(page.text, 'html.parser')
-link_elements = soup.find_all(class_='link')
-for link_element in link_elements:
-    text = link_element.get_text()
-    if text.startswith('http://'):
-        print(text)
+i_elements = soup.find_all('link')
+for i_element in i_elements:
+    if i_element.text.startswith('http://'):
+        print(i_element.text)
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=4")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=4")
 soup = BeautifulSoup(page.text, 'html.parser')
-link_elements = soup.find_all(class_='link')
-for link_element in link_elements:
-    text = link_element.get_text()
-    if text.startswith('http://'):
-        print(text)
+i_elements = soup.find_all('link')
+for i_element in i_elements:
+    if i_element.text.startswith('http://'):
+        print(i_element.text)
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=5")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=5")
 soup = BeautifulSoup(page.text, 'html.parser')
-link_elements = soup.find_all(class_='link')
-for link_element in link_elements:
-    text = link_element.get_text()
-    if text.startswith('http://'):
-        print(text)
+i_elements = soup.find_all('link')
+for i_element in i_elements:
+    if i_element.text.startswith('http://'):
+        print(i_element.text)
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=6")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=6")
 soup = BeautifulSoup(page.text, 'html.parser')
-link_elements = soup.find_all(class_='link')
-for link_element in link_elements:
-    text = link_element.get_text()
-    if text.startswith('http://'):
-        print(text)
+i_elements = soup.find_all('link')
+for i_element in i_elements:
+    if i_element.text.startswith('http://'):
+        print(i_element.text)
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=7")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=7")
 soup = BeautifulSoup(page.text, 'html.parser')
-link_elements = soup.find_all(class_='link')
-for link_element in link_elements:
-    text = link_element.get_text()
-    if text.startswith('http://'):
-        print(text)
+i_elements = soup.find_all('link')
+for i_element in i_elements:
+    if i_element.text.startswith('http://'):
+        print(i_element.text)
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=8")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=8")
 soup = BeautifulSoup(page.text, 'html.parser')
-link_elements = soup.find_all(class_='link')
-for link_element in link_elements:
-    text = link_element.get_text()
-    if text.startswith('http://'):
-        print(text)
+i_elements = soup.find_all('link')
+for i_element in i_elements:
+    if i_element.text.startswith('http://'):
+        print(i_element.text)
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=9")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=9")
 soup = BeautifulSoup(page.text, 'html.parser')
-link_elements = soup.find_all(class_='link')
-for link_element in link_elements:
-    text = link_element.get_text()
-    if text.startswith('http://'):
-        print(text)
+i_elements = soup.find_all('link')
+for i_element in i_elements:
+    if i_element.text.startswith('http://'):
+        print(i_element.text)
 print(colored('[+] Done from OnionLand', 'yellow' ))
 
 
@@ -149,51 +140,51 @@ print(colored('[+] Searching in "TOR66" http://tor77orrbgejplwp.onion... ', 'gre
 session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q=" + xquery + "&sorttype=rel&page=1" )
 page = session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q="+ xquery + "&sorttype=rel&page=1" )
 soup = BeautifulSoup(page.text, 'html.parser')
-tags = soup.find_all('a', attrs={'href': re.compile("^http://")})
-for tag in tags:
-  print (tag.get('href'))
+a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
+for a_element in a_elements:
+    print(a_element['href'])
 session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q=" + xquery + "&sorttype=rel&page=2" )
 page = session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q="+ xquery + "&sorttype=rel&page=2" )
 soup = BeautifulSoup(page.text, 'html.parser')
-tags = soup.find_all('a', attrs={'href': re.compile("^http://")})
-for tag in tags:
-  print (tag.get('href'))
+a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
+for a_element in a_elements:
+    print(a_element['href'])
 session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q=" + xquery + "&sorttype=rel&page=3" )
 page = session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q="+ xquery + "&sorttype=rel&page=3" )
 soup = BeautifulSoup(page.text, 'html.parser')
-tags = soup.find_all('a', attrs={'href': re.compile("^http://")})
-for tag in tags:
-  print (tag.get('href'))
+a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
+for a_element in a_elements:
+    print(a_element['href'])
 session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q=" + xquery + "&sorttype=rel&page=4" )
 page = session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q="+ xquery + "&sorttype=rel&page=4" )
 soup = BeautifulSoup(page.text, 'html.parser')
-tags = soup.find_all('a', attrs={'href': re.compile("^http://")})
-for tag in tags:
-  print (tag.get('href'))
+a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
+for a_element in a_elements:
+    print(a_element['href'])
 session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q=" + xquery + "&sorttype=rel&page=5" )
 page = session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q="+ xquery + "&sorttype=rel&page=5" )
 soup = BeautifulSoup(page.text, 'html.parser')
-tags = soup.find_all('a', attrs={'href': re.compile("^http://")})
-for tag in tags:
-  print (tag.get('href'))
+a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
+for a_element in a_elements:
+    print(a_element['href'])
 session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q=" + xquery + "&sorttype=rel&page=6" )
 page = session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q="+ xquery + "&sorttype=rel&page=6" )
 soup = BeautifulSoup(page.text, 'html.parser')
-tags = soup.find_all('a', attrs={'href': re.compile("^http://")})
-for tag in tags:
-  print (tag.get('href'))
+a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
+for a_element in a_elements:
+    print(a_element['href'])
 session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q=" + xquery + "&sorttype=rel&page=7" )
 page = session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q="+ xquery + "&sorttype=rel&page=7" )
 soup = BeautifulSoup(page.text, 'html.parser')
-tags = soup.find_all('a', attrs={'href': re.compile("^http://")})
-for tag in tags:
-  print (tag.get('href'))
+a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
+for a_element in a_elements:
+    print(a_element['href'])
 session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q=" + xquery + "&sorttype=rel&page=8" )
 page = session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q="+ xquery + "&sorttype=rel&page=8" )
 soup = BeautifulSoup(page.text, 'html.parser')
-tags = soup.find_all('a', attrs={'href': re.compile("^http://")})
-for tag in tags:
-  print (tag.get('href'))
+a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
+for a_element in a_elements:
+    print(a_element['href'])
 print(colored('[+] Done from TOR66', 'yellow' ))
 print ("")  
 #####
