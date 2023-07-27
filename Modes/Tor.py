@@ -35,6 +35,10 @@ from termcolor import colored, cprint
 from bs4 import BeautifulSoup , SoupStrainer
 from urllib.request import urlparse, urljoin
 import re
+from io import StringIO
+import string
+import random
+from datetime import datetime
 
 T = """
 
@@ -59,21 +63,25 @@ print(colored('[+] Got session... ', 'green' ))
 print ("") 
 xquery = input ("Please set your query : ") 
 
+current_date = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")  # Obtém a data atual no formato: YYYY-MM-DD_HH-MM-SS
+report_name = ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))  # Gera um nome aleatório com 5 caracteres
 
-
+# Redirecionar a saída padrão para um arquivo temporário
+with open(f"{report_name}_report_{current_date}.txt", "w") as file:
+    original_stdout = sys.stdout
+    sys.stdout = file
 #####
 ##### SearX
 #####
 print ("")
 print(colored('[+] Searching in "SearX" http://searx3aolosaf3urwnhpynlhuokqsgz47si4pzz5hvb7uuzyjncl2tid.onion...  ', 'green' ))
-for page_number in range(1, 101):
-    session.get(f"http://searx3aolosaf3urwnhpynlhuokqsgz47si4pzz5hvb7uuzyjncl2tid.onion/search?q={xquery}&category_onions=1&pageno={page_number}")
-    page = session.get(f"http://searx3aolosaf3urwnhpynlhuokqsgz47si4pzz5hvb7uuzyjncl2tid.onion/search?q={xquery}&category_onions=1&pageno={page_number}")
-    soup = BeautifulSoup(page.text, 'html.parser')
-    link_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
-    for link_element in link_elements:
-        link = link_element['href']
-        print(link)
+session.get(f"http://searx3aolosaf3urwnhpynlhuokqsgz47si4pzz5hvb7uuzyjncl2tid.onion/search?q={xquery}&category_onions=1&pageno={page_number}")
+page = session.get(f"http://searx3aolosaf3urwnhpynlhuokqsgz47si4pzz5hvb7uuzyjncl2tid.onion/search?q={xquery}&category_onions=1&pageno={page_number}")
+soup = BeautifulSoup(page.text, 'html.parser')
+link_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
+  for link_element in link_elements:
+    link = link_element['href']
+    print(link)
 print(colored('[+] Done from OnionLand', 'yellow' ))
 
 
@@ -559,3 +567,29 @@ for list_element in list_elements:
 for href in href_values:
     print(href)
 print(colored('[+] Done from Submarine', 'yellow' ))
+#####
+##### Archive.Today
+#####
+print(colored('[+] Searching in "Archive.Today" http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion ', 'green' )) 
+session.get("http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/" + xquery)
+page = session.get("http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/" + xquery)
+soup = BeautifulSoup(page.text, 'html.parser')
+title_elements = soup.find_all('title')
+if title_elements:
+    for title_element in title_elements:
+        title = title_element.get_text()
+        print(f"Title: {title}")
+else:
+    print("Title not found.")
+print(colored('[+] Done from Archive.Today', 'yellow' ))
+
+ output_text = sys.stdout.getvalue()
+
+    # Restaurar a saída padrão original
+    sys.stdout = original_stdout
+
+# Salvar o relatório em um arquivo .txt
+with open(f"{report_name}_report_{current_date}.txt", "a") as file:
+    file.write("===== Relatório " + report_name + " - " + current_date + " =====\n")
+    file.write(output_text)
+    file.write("============================\n")
