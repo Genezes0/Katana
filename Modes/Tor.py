@@ -524,141 +524,121 @@ page = session.get("http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpx
 soup = BeautifulSoup(page.text, 'html.parser')
 i_elements = soup.find_all('i')
 unique_links = set()
-    for i_element in i_elements:
-        if i_element.text.startswith('http://'):
-            unique_links.add(i_element.text)
-    print(colored('[+] Searching in "Haystak" ' + url, 'green'))
-    for link in unique_links:
-        print(link)
+for i_element in i_elements:
+  if i_element.text.startswith('http://'):
+    unique_links.add(i_element.text)
+print(colored('[+] Searching in "Haystak" ' + url, 'green'))
+for link in unique_links:
+  print(link)
 session.get("http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q=" + xquery + "&offset=2")
 page = session.get("http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q=" + xquery + "&offset=2")
 soup = BeautifulSoup(page.text, 'html.parser')
 i_elements = soup.find_all('i')
 unique_links = set()
-
-    for i_element in i_elements:
-        if i_element.text.startswith('http://'):
-            unique_links.add(i_element.text)
-
-    print(colored('[+] Searching in "Haystak" ' + url, 'green'))
-    for link in unique_links:
-        print(link)
+for i_element in i_elements:
+  if i_element.text.startswith('http://'):
+    unique_links.add(i_element.text)
+print(colored('[+] Searching in "Haystak" ' + url, 'green'))
+for link in unique_links:
+  print(link)
 session.get("http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q=" + xquery + "&offset=3")
 page = session.get("http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q=" + xquery + "&offset=3")
 soup = BeautifulSoup(page.text, 'html.parser')
 i_elements = soup.find_all('i')
 unique_links = set()
-
-    for i_element in i_elements:
-        if i_element.text.startswith('http://'):
-            unique_links.add(i_element.text)
-
-    print(colored('[+] Searching in "Haystak" ' + url, 'green'))
-    for link in unique_links:
-        print(link)
+for i_element in i_elements:
+  if i_element.text.startswith('http://'):
+    unique_links.add(i_element.text)
+print(colored('[+] Searching in "Haystak" ' + url, 'green'))
+for link in unique_links:
+  print(link)
 session.get("http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q=" + xquery + "&offset=4")
 page = session.get("http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q=" + xquery + "&offset=4")
 soup = BeautifulSoup(page.text, 'html.parser')
 unique_links = set()
-
-    for i_element in i_elements:
-        if i_element.text.startswith('http://'):
-            unique_links.add(i_element.text)
-
-    print(colored('[+] Searching in "Haystak" ' + url, 'green'))
-    for link in unique_links:
-        print(link)
+for i_element in i_elements:
+  if i_element.text.startswith('http://'):
+    unique_links.add(i_element.text)
+print(colored('[+] Searching in "Haystak" ' + url, 'green'))
+for link in unique_links:
+  print(link)
 session.get("http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q=" + xquery + "&offset=5")
 page = session.get("http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q=" + xquery + "&offset=5")
 soup = BeautifulSoup(page.text, 'html.parser')
 i_elements = soup.find_all('i')
 unique_links = set()
-
-    for i_element in i_elements:
-        if i_element.text.startswith('http://'):
-            unique_links.add(i_element.text)
-
-    print(colored('[+] Searching in "Haystak" ' + url, 'green'))
-    for link in unique_links:
-        print(link)
+for i_element in i_elements:
+  if i_element.text.startswith('http://'):
+    unique_links.add(i_element.text)
+print(colored('[+] Searching in "Haystak" ' + url, 'green'))
+for link in unique_links:
+  print(link)
 session.get("http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q=test" + xquery + "&offset=6")
 page = session.get("http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q=test" + xquery + "&offset=6")
 soup = BeautifulSoup(page.text, 'html.parser')
 i_elements = soup.find_all('i')
 unique_links = set()
-
-    for i_element in i_elements:
-        if i_element.text.startswith('http://'):
-            unique_links.add(i_element.text)
-
-    print(colored('[+] Searching in "Haystak" ' + url, 'green'))
-    for link in unique_links:
-        print(link)
+for i_element in i_elements:
+  if i_element.text.startswith('http://'):
+    unique_links.add(i_element.text)
+print(colored('[+] Searching in "Haystak" ' + url, 'green'))
+for link in unique_links:
+  print(link)
 session.get("http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q=" + xquery + "&offset=7")
 page = session.get("http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q=" + xquery + "&offset=7")
 soup = BeautifulSoup(page.text, 'html.parser')
 i_elements = soup.find_all('i')
 unique_links = set()
-
-    for i_element in i_elements:
-        if i_element.text.startswith('http://'):
-            unique_links.add(i_element.text)
-
-    print(colored('[+] Searching in "Haystak" ' + url, 'green'))
-    for link in unique_links:
-        print(link)
+for i_element in i_elements:
+  if i_element.text.startswith('http://'):
+    unique_links.add(i_element.text)
+print(colored('[+] Searching in "Haystak" ' + url, 'green'))
+for link in unique_links:
+  print(link)
 session.get("http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q=" + xquery + "&offset=8")
 page = session.get("http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q=" + xquery + "&offset=8")
 soup = BeautifulSoup(page.text, 'html.parser')
 i_elements = soup.find_all('i')
 unique_links = set()
-
-    for i_element in i_elements:
-        if i_element.text.startswith('http://'):
-            unique_links.add(i_element.text)
-
-    print(colored('[+] Searching in "Haystak" ' + url, 'green'))
-    for link in unique_links:
-        print(link)
+for i_element in i_elements:
+  if i_element.text.startswith('http://'):
+    unique_links.add(i_element.text)
+print(colored('[+] Searching in "Haystak" ' + url, 'green'))
+for link in unique_links:
+  print(link)
 session.get("http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q=" + xquery + "&offset=9")
 page = session.get("http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q=" + xquery + "&offset=9")
 soup = BeautifulSoup(page.text, 'html.parser')
 i_elements = soup.find_all('i')
 unique_links = set()
-
-    for i_element in i_elements:
-        if i_element.text.startswith('http://'):
-            unique_links.add(i_element.text)
-
-    print(colored('[+] Searching in "Haystak" ' + url, 'green'))
-    for link in unique_links:
-        print(link)
+for i_element in i_elements:
+  if i_element.text.startswith('http://'):
+    unique_links.add(i_element.text)
+print(colored('[+] Searching in "Haystak" ' + url, 'green'))
+for link in unique_links:
+  print(link)
 session.get("http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q=" + xquery + "&offset=10")
 page = session.get("http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q=" + xquery + "&offset=10")
 soup = BeautifulSoup(page.text, 'html.parser')
 i_elements = soup.find_all('i')
 unique_links = set()
-
-    for i_element in i_elements:
-        if i_element.text.startswith('http://'):
-            unique_links.add(i_element.text)
-
-    print(colored('[+] Searching in "Haystak" ' + url, 'green'))
-    for link in unique_links:
-        print(link)
+for i_element in i_elements:
+  if i_element.text.startswith('http://'):
+    unique_links.add(i_element.text)
+print(colored('[+] Searching in "Haystak" ' + url, 'green'))
+for link in unique_links:
+  print(link)
 session.get("http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q=" + xquery + "&offset=11")
 page = session.get("http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/?q=" + xquery + "&offset=11")
 soup = BeautifulSoup(page.text, 'html.parser')
 i_elements = soup.find_all('i')
 unique_links = set()
-
-    for i_element in i_elements:
-        if i_element.text.startswith('http://'):
-            unique_links.add(i_element.text)
-
-    print(colored('[+] Searching in "Haystak" ' + url, 'green'))
-    for link in unique_links:
-        print(link)
+for i_element in i_elements:
+  if i_element.text.startswith('http://'):
+    unique_links.add(i_element.text)
+print(colored('[+] Searching in "Haystak" ' + url, 'green'))
+for link in unique_links:
+  print(link)
 print(colored('[+] Done from Haystak', 'yellow' ))
 #####
 ##### Submarine
