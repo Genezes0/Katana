@@ -69,102 +69,66 @@ print(colored('[+] Searching in "OnionLand" http://3bbad7fauom4d6sgppalyqddsqbf5
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=1")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=1")
 soup = BeautifulSoup(page.text, 'html.parser')
-i_elements = soup.find_all('div', class_='link')
-unique_links = set()
-for i_element in i_elements:
-  link_text = i_element.text.strip()
-  if link_text.startswith('http://'):
-    unique_links.add(link_text)
-for link in unique_links:
-  print(link)
+link_elements = soup.find_all('div', class_='link')
+for link_element in link_elements:
+    link_text = link_element.text.strip()
+    print(link_text)
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=2")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=2")
 soup = BeautifulSoup(page.text, 'html.parser')
-i_elements = soup.find_all('div', class_='link')
-unique_links = set()
-for i_element in i_elements:
-  link_text = i_element.text.strip()
-  if link_text.startswith('http://'):
-    unique_links.add(link_text)
-for link in unique_links:
-  print(link)
+link_elements = soup.find_all('div', class_='link')
+for link_element in link_elements:
+    link_text = link_element.text.strip()
+    print(link_text)
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=3")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=3")
 soup = BeautifulSoup(page.text, 'html.parser')
-i_elements = soup.find_all('div', class_='link')
-unique_links = set()
-for i_element in i_elements:
-  link_text = i_element.text.strip()
-  if link_text.startswith('http://'):
-    unique_links.add(link_text)
-for link in unique_links:
-  print(link)
+link_elements = soup.find_all('div', class_='link')
+for link_element in link_elements:
+    link_text = link_element.text.strip()
+    print(link_text)
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=4")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=4")
 soup = BeautifulSoup(page.text, 'html.parser')
-i_elements = soup.find_all('div', class_='link')
-unique_links = set()
-for i_element in i_elements:
-  link_text = i_element.text.strip()
-  if link_text.startswith('http://'):
-    unique_links.add(link_text)
-for link in unique_links:
-  print(link)
+link_elements = soup.find_all('div', class_='link')
+for link_element in link_elements:
+    link_text = link_element.text.strip()
+    print(link_text)
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=5")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=5")
 soup = BeautifulSoup(page.text, 'html.parser')
-i_elements = soup.find_all('div', class_='link')
-unique_links = set()
-for i_element in i_elements:
-  link_text = i_element.text.strip()
-  if link_text.startswith('http://'):
-    unique_links.add(link_text)
-for link in unique_links:
-  print(link)
+link_elements = soup.find_all('div', class_='link')
+for link_element in link_elements:
+    link_text = link_element.text.strip()
+    print(link_text)
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=6")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=6")
 soup = BeautifulSoup(page.text, 'html.parser')
-i_elements = soup.find_all('div', class_='link')
-unique_links = set()
-for i_element in i_elements:
-  link_text = i_element.text.strip()
-  if link_text.startswith('http://'):
-    unique_links.add(link_text)
-for link in unique_links:
-  print(link)
+link_elements = soup.find_all('div', class_='link')
+for link_element in link_elements:
+    link_text = link_element.text.strip()
+    print(link_text)
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=7")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=7")
 soup = BeautifulSoup(page.text, 'html.parser')
-i_elements = soup.find_all('div', class_='link')
-unique_links = set()
-for i_element in i_elements:
-  link_text = i_element.text.strip()
-  if link_text.startswith('http://'):
-    unique_links.add(link_text)
-for link in unique_links:
-  print(link)
+link_elements = soup.find_all('div', class_='link')
+for link_element in link_elements:
+    link_text = link_element.text.strip()
+    print(link_text)
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=8")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=8")
 soup = BeautifulSoup(page.text, 'html.parser')
-i_elements = soup.find_all('div', class_='link')
-unique_links = set()
-for i_element in i_elements:
-  link_text = i_element.text.strip()
-  if link_text.startswith('http://'):
-    unique_links.add(link_text)
-for link in unique_links:
-  print(link)
+link_elements = soup.find_all('div', class_='link')
+for link_element in link_elements:
+    link_text = link_element.text.strip()
+    print(link_text)
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=9")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=9")
 soup = BeautifulSoup(page.text, 'html.parser')
-i_elements = soup.find_all('div', class_='link')
-unique_links = set()
-for i_element in i_elements:
-  link_text = i_element.text.strip()
-  if link_text.startswith('http://'):
-    unique_links.add(link_text)
-for link in unique_links:
-  print(link)
+link_elements = soup.find_all('div', class_='link')
+for link_element in link_elements:
+    link_text = link_element.text.strip()
+    print(link_text)
 print(colored('[+] Done from OnionLand', 'yellow' ))
 
 
@@ -520,7 +484,7 @@ print(colored('[+] Done from Haystak', 'yellow' ))
 #####
 ##### Submarine
 #####
-print(colored('[+] Searching in "Submarine" http://haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion ', 'green' )) 
+print(colored('[+] Searching in "Submarine" http://no6m4wzdexe3auiupv2zwif7rm6qwxcyhslkcnzisxgeiw6pvjsgafad.onion ', 'green' )) 
 session.get("http://no6m4wzdexe3auiupv2zwif7rm6qwxcyhslkcnzisxgeiw6pvjsgafad.onion/search.php?term=" + xquery + "&page=1")
 page = session.get("http://no6m4wzdexe3auiupv2zwif7rm6qwxcyhslkcnzisxgeiw6pvjsgafad.onion/search.php?term=" + xquery + "&page=1")
 soup = BeautifulSoup(page.text, 'html.parser')
