@@ -200,6 +200,9 @@ print(colored('[+] Done from Ahmia', 'yellow' ))
 #####
 ##### Torch 
 #####
+
+base_url = "http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P="
+
 for i in range(1, 21):
     print(colored('[+] Searching in "Torch" http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion', 'green'))
 
