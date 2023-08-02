@@ -200,15 +200,11 @@ print(colored('[+] Done from Ahmia', 'yellow' ))
 #####
 ##### Torch 
 #####
-base_url = "http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P="
-
 for i in range(1, 21):
-    xquery = initial_xquery + "&DEFAULTOP=and&[=" + str(i)
-
     print(colored('[+] Searching in "Torch" http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion', 'green'))
 
 session = requests.Session()
-url = base_url + xquery
+url = base_url + xquery + "&DEFAULTOP=and&[=" + str(i)
 page = session.get(url)
 soup = BeautifulSoup(page.text, 'html.parser')
 
