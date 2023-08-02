@@ -200,173 +200,27 @@ print(colored('[+] Done from Ahmia', 'yellow' ))
 #####
 ##### Torch 
 #####
-print(colored('[+] Searching in "Torch" http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion ', 'green' )) 
-session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=1")
-page = session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=1")
+base_url = "http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P="
+
+for i in range(1, 21):
+    xquery = initial_xquery + "&DEFAULTOP=and&[=" + str(i)
+
+    print(colored('[+] Searching in "Torch" http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion', 'green'))
+
+session = requests.Session()
+url = base_url + xquery
+page = session.get(url)
 soup = BeautifulSoup(page.text, 'html.parser')
+
 a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
 unique_links = set()
 for a_element in a_elements:
     href = a_element.get('href')
     if href:
-      unique_links.add(href)
+        unique_links.add(href)
+
 for link in unique_links:
-  print(link)
-session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=2")
-page = session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=2")
-soup = BeautifulSoup(page.text, 'html.parser')
-a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
-unique_links = set()
-for a_element in a_elements:
-    href = a_element.get('href')
-    if href:
-      unique_links.add(href)
-for link in unique_links:
-  print(link)
-session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=3")
-page = session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=3")
-soup = BeautifulSoup(page.text, 'html.parser')
-a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
-unique_links = set()
-for a_element in a_elements:
-    href = a_element.get('href')
-    if href:
-      unique_links.add(href)
-for link in unique_links:
-  print(link)
-session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=4")
-page = session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=4")
-soup = BeautifulSoup(page.text, 'html.parser')
-a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
-unique_links = set()
-for a_element in a_elements:
-    href = a_element.get('href')
-    if href:
-      unique_links.add(href)
-for link in unique_links:
-  print(link)
-session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=5")
-page = session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=5")
-soup = BeautifulSoup(page.text, 'html.parser')
-a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
-unique_links = set()
-for a_element in a_elements:
-    href = a_element.get('href')
-    if href:
-      unique_links.add(href)
-for link in unique_links:
-  print(link)
-session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=6")
-page = session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=6")
-soup = BeautifulSoup(page.text, 'html.parser')
-a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
-unique_links = set()
-for a_element in a_elements:
-    href = a_element.get('href')
-    if href:
-      unique_links.add(href)
-for link in unique_links:
-  print(link)
-session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=7")
-page = session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=7")
-soup = BeautifulSoup(page.text, 'html.parser')
-a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
-unique_links = set()
-for a_element in a_elements:
-    href = a_element.get('href')
-    if href:
-      unique_links.add(href)
-for link in unique_links:
-  print(link)
-session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=8")
-page = session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=8")
-soup = BeautifulSoup(page.text, 'html.parser')
-a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
-unique_links = set()
-for a_element in a_elements:
-    href = a_element.get('href')
-    if href:
-      unique_links.add(href)
-for link in unique_links:
-  print(link)
-session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=9")
-page = session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=9")
-soup = BeautifulSoup(page.text, 'html.parser')
-a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
-unique_links = set()
-for a_element in a_elements:
-    href = a_element.get('href')
-    if href:
-      unique_links.add(href)
-for link in unique_links:
-  print(link)
-session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=10")
-page = session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=10")
-soup = BeautifulSoup(page.text, 'html.parser')
-a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
-unique_links = set()
-for a_element in a_elements:
-    href = a_element.get('href')
-    if href:
-      unique_links.add(href)
-for link in unique_links:
-  print(link)
-session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=11")
-page = session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=11")
-soup = BeautifulSoup(page.text, 'html.parser')
-a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
-unique_links = set()
-for a_element in a_elements:
-    href = a_element.get('href')
-    if href:
-      unique_links.add(href)
-for link in unique_links:
-  print(link)
-session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=12")
-page = session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=12")
-soup = BeautifulSoup(page.text, 'html.parser')
-a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
-unique_links = set()
-for a_element in a_elements:
-    href = a_element.get('href')
-    if href:
-      unique_links.add(href)
-for link in unique_links:
-  print(link)
-session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=13")
-page = session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=13")
-soup = BeautifulSoup(page.text, 'html.parser')
-a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
-unique_links = set()
-for a_element in a_elements:
-    href = a_element.get('href')
-    if href:
-      unique_links.add(href)
-for link in unique_links:
-  print(link)
-session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=14")
-page = session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=14")
-soup = BeautifulSoup(page.text, 'html.parser')
-a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
-unique_links = set()
-for a_element in a_elements:
-    href = a_element.get('href')
-    if href:
-      unique_links.add(href)
-for link in unique_links:
-  print(link)
-session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=15")
-page = session.get("http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/cgi-bin/omega/omega?P=" + xquery + "&DEFAULTOP=and&[=15")
-soup = BeautifulSoup(page.text, 'html.parser')
-a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
-unique_links = set()
-for a_element in a_elements:
-    href = a_element.get('href')
-    if href:
-      unique_links.add(href)
-for link in unique_links:
-  print(link)
-print(colored('[+] Done from Torch', 'yellow' ))
+    print(link)
 #####
 ##### Haystak
 #####
