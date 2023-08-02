@@ -172,55 +172,13 @@ print(colored('[+] Done from OnionLand', 'yellow' ))
 ##### TOR66
 ##### 
 print ("")
-print(colored('[+] Searching in "TOR66" http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion... ', 'green' ))
+print(colored('[+] Searching in "TOR66" http://tor77orrbgejplwp.onion... ', 'green' ))
 session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q=" + xquery + "&sorttype=rel&page=1" )
-page = session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q="+ xquery + "&sorttype=rel&page=1" )
+page = session.get("http://phobosxilamwcg75xt22id7aywkzol6q6rfl2flipcqoc4e4ahima5id.onion/search?query="+ xquery + "&sorttype=rel&page=1" )
 soup = BeautifulSoup(page.text, 'html.parser')
-a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
-for a_element in a_elements:
-    print(a_element['href'])
-session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q=" + xquery + "&sorttype=rel&page=2" )
-page = session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q="+ xquery + "&sorttype=rel&page=2" )
-soup = BeautifulSoup(page.text, 'html.parser')
-a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
-for a_element in a_elements:
-    print(a_element['href'])
-session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q=" + xquery + "&sorttype=rel&page=3" )
-page = session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q="+ xquery + "&sorttype=rel&page=3" )
-soup = BeautifulSoup(page.text, 'html.parser')
-a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
-for a_element in a_elements:
-    print(a_element['href'])
-session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q=" + xquery + "&sorttype=rel&page=4" )
-page = session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q="+ xquery + "&sorttype=rel&page=4" )
-soup = BeautifulSoup(page.text, 'html.parser')
-a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
-for a_element in a_elements:
-    print(a_element['href'])
-session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q=" + xquery + "&sorttype=rel&page=5" )
-page = session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q="+ xquery + "&sorttype=rel&page=5" )
-soup = BeautifulSoup(page.text, 'html.parser')
-a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
-for a_element in a_elements:
-    print(a_element['href'])
-session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q=" + xquery + "&sorttype=rel&page=6" )
-page = session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q="+ xquery + "&sorttype=rel&page=6" )
-soup = BeautifulSoup(page.text, 'html.parser')
-a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
-for a_element in a_elements:
-    print(a_element['href'])
-session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q=" + xquery + "&sorttype=rel&page=7" )
-page = session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q="+ xquery + "&sorttype=rel&page=7" )
-soup = BeautifulSoup(page.text, 'html.parser')
-a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
-for a_element in a_elements:
-    print(a_element['href'])
-session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q=" + xquery + "&sorttype=rel&page=8" )
-page = session.get("http://tor66sewebgixwhcqfnp5inzp5x5uohhdy3kvtnyfxc2e5mxiuh34iid.onion/search?q="+ xquery + "&sorttype=rel&page=8" )
-soup = BeautifulSoup(page.text, 'html.parser')
-a_elements = soup.find_all('a', href=lambda href: href and href.startswith('http://'))
-for a_element in a_elements:
-    print(a_element['href'])
+tags = soup.find_all('a', attrs={'href': re.compile("^http://")})
+for tag in tags:
+  print (tag.get('href'))
 print(colored('[+] Done from TOR66', 'yellow' ))
 print ("")  
 #####
@@ -707,3 +665,56 @@ for list_element in list_elements:
 for href in href_values:
     print(href)
 print(colored('[+] Done from Submarine', 'yellow' ))
+#####
+##### Lockbit database
+#####
+print(colored('[+] Searching in "Lockbit Real-Time Attacks" http://lockbitapt6vx57t3eeqjofwgcglmutr3a35nygvokja5uuccip4ykyd.onion for domain ', 'green' )) 
+session.get("http://lockbitapt6vx57t3eeqjofwgcglmutr3a35nygvokja5uuccip4ykyd.onion")
+page = session.get("http://lockbitapt6vx57t3eeqjofwgcglmutr3a35nygvokja5uuccip4ykyd.onion")
+soup = BeautifulSoup(page.text, 'html.parser')
+post_titles = soup.find_all(class_='post-title')
+found_match = False
+for title in post_titles:
+  if title.text.strip() == xquery:
+    found_match = True
+    break
+# Se encontrou correspondência com a xquery, imprime os resultados únicos
+if found_match:
+  list_elements = soup.find_all(class_='list')
+  href_values = set()  # Use a set to store unique href values
+for list_element in list_elements:
+  href = list_element.text.strip()
+  href_values.add(href)
+for href in href_values:
+  print(href)
+else:
+  print("Não foi possível encontrar os dados na Lockbit.")
+  print("Realize a busca manualmente em: http://lockbitapt6vx57t3eeqjofwgcglmutr3a35nygvokja5uuccip4ykyd.onion")
+######
+###### Lockbit archives
+######
+print(colored('[+] Searching in "Lockbit Archives" http://lockbit7z2jwcskxpbokpemdxmltipntwlkmidcll2qirbu7ykg46eyd.onion for domain ', 'green' )) 
+session.get("http://lockbit7z2jwcskxpbokpemdxmltipntwlkmidcll2qirbu7ykg46eyd.onion")
+page = session.get("http://lockbit7z2jwcskxpbokpemdxmltipntwlkmidcll2qirbu7ykg46eyd.onion")
+soup = BeautifulSoup(page.text, 'html.parser')
+link_elements = soup.find_all(class_='link')
+found_match = False
+for link_element in link_elements:
+    href = link_element.get_text().strip()
+    if href == xquery:
+        found_match = True
+        break
+
+    # Se encontrou correspondência com a xquery, imprime os resultados únicos
+if found_match:
+    href_values = set()  # Use a set to store unique href values
+    for link_element in link_elements:
+        href = link_element.get_text().strip()
+        href_values.add(href)
+
+    for href in href_values:
+        print(href)
+else:
+    print("Não foi possível encontrar os dados na Lockbit.")
+    print("Realize a busca manualmente em: http://lockbit7z2jwcskxpbokpemdxmltipntwlkmidcll2qirbu7ykg46eyd.onion")
+
