@@ -1,6 +1,6 @@
 # @name:    Katana-DorkScanner
-# @repo:    https://github.com/adnane-X-tebbaa/Katana
-# @author:  Adnane tebbaa (AXT)
+# @repo:    https://github.com/Genezes0/Katana/edit/master/Modes/Tor.py
+# @author:  Adnane tebbaa (AXT) & Genezes0
 # Tor-file V0.1
 """
 MIT License
@@ -42,7 +42,7 @@ T = """
  |_   _|__  _ __
    | |/ _ \| '__| Katana-ds V1.5.3
    | | (_) | |    Tor Mode
-   |_|\___/|_|    Coded by Adnane-X-Tebbaa (AXT)
+   |_|\___/|_|   
              
     """
 print(T)
@@ -72,28 +72,32 @@ soup = BeautifulSoup(page.text, 'html.parser')
 link_elements = soup.find_all('div', class_='link')
 for link_element in link_elements:
     link_text = link_element.text.strip()
-    print(link_text)
+    if link_text.startswith('http://'):
+        print(link_text)
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=2")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=2")
 soup = BeautifulSoup(page.text, 'html.parser')
 link_elements = soup.find_all('div', class_='link')
 for link_element in link_elements:
     link_text = link_element.text.strip()
-    print(link_text)
+    if link_text.startswith('http://'):
+        print(link_text)
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=3")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=3")
 soup = BeautifulSoup(page.text, 'html.parser')
 link_elements = soup.find_all('div', class_='link')
 for link_element in link_elements:
     link_text = link_element.text.strip()
-    print(link_text)
+    if link_text.startswith('http://'):
+        print(link_text)
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=4")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=4")
 soup = BeautifulSoup(page.text, 'html.parser')
 link_elements = soup.find_all('div', class_='link')
 for link_element in link_elements:
     link_text = link_element.text.strip()
-    print(link_text)
+    if link_text.startswith('http://'):
+        print(link_text)
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=5")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=5")
 soup = BeautifulSoup(page.text, 'html.parser')
@@ -107,28 +111,32 @@ soup = BeautifulSoup(page.text, 'html.parser')
 link_elements = soup.find_all('div', class_='link')
 for link_element in link_elements:
     link_text = link_element.text.strip()
-    print(link_text)
+    if link_text.startswith('http://'):
+        print(link_text)
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=7")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=7")
 soup = BeautifulSoup(page.text, 'html.parser')
 link_elements = soup.find_all('div', class_='link')
 for link_element in link_elements:
     link_text = link_element.text.strip()
-    print(link_text)
+    if link_text.startswith('http://'):
+        print(link_text)
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=8")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=8")
 soup = BeautifulSoup(page.text, 'html.parser')
 link_elements = soup.find_all('div', class_='link')
 for link_element in link_elements:
     link_text = link_element.text.strip()
-    print(link_text)
+    if link_text.startswith('http://'):
+        print(link_text)
 session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=9")
 page = session.get("http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion/search?q=" + xquery + "&page=9")
 soup = BeautifulSoup(page.text, 'html.parser')
 link_elements = soup.find_all('div', class_='link')
 for link_element in link_elements:
     link_text = link_element.text.strip()
-    print(link_text)
+    if link_text.startswith('http://'):
+        print(link_text)
 print(colored('[+] Done from OnionLand', 'yellow' ))
 
 
