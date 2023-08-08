@@ -1,7 +1,3 @@
-# @name:    Katana-DorkScanner
-# @repo:    https://github.com/Genezes0/Katana/edit/master/Modes/Tor.py
-# @author:  Adnane tebbaa (AXT) & Genezes0
-# Tor-file V0.1
 """
 MIT License
 
